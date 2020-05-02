@@ -1,0 +1,32 @@
+// ==============================
+// Custom style
+// ==============================
+// You can override the variables in _variables.scss to customize the style
+
+// ========== Color ========== //
+$black: #0a0a0a !default;
+$white: #fefefe !default;
+$light-gray: #e6e6e6 !default;
+$gray: #cacaca !default;
+$dark-gray: #8a8a8a !default;
+  
+// Font family of the site.
+$global-font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, Helvetica, "Segoe UI", Roboto, sans-serif;
+
+// Serif font family of the site.
+//$global-serif-font-family: 'Spectral', serif !default;
+$global-serif-font-family:  'Source Sans Pro', -apple-system, BlinkMacSystemFont, Helvetica, "Segoe UI", Roboto, sans-serif;
+
+// Font family of the logo.
+$logo-font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, Helvetica, "Segoe UI", Roboto, sans-serif;
+
+// Font size of the logo.
+$logo-font-size: 24px !default;
+
+h1, h2, h3, h4 {
+    font-family: $global-font-family;
+    font-weight: 600;
+}
+
+// Font family of the code.
+$code-font-family: Menlo, Monaco, monospace !default;

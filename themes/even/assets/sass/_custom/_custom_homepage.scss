@@ -1,0 +1,21 @@
+// General link behavior
+
+.homepage-content{
+  font-family: 'Charter', 'Source Serif Pro', $global-font-family;
+  
+    a {
+        color: $theme-color;
+        border-bottom: $content-link-border;
+        border-bottom-width: 0.5px;
+        word-break: normal, break-all;
+    
+        &:hover {
+          border-bottom: $content-link-border;
+        }
+    
+        &.fancybox {
+          border: 0;
+        }
+      }
+
+}

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Getting started - Anant Dalela</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Anant Dalela" /><meta name="description" content="Plans for this site and avoiding the cold start problem." /><meta name="keywords" content="blog, data science, machine learning, programming, software" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.69.2 with theme even" />
+
+
+<link rel="canonical" href="https://anantd.github.io/post/getting-started/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+<link rel="stylesheet" href="https://unpkg.com/littlefoot/dist/littlefoot.css"/>
+
+}
+
+
+
+
+
+
+<link href="/sass/main.min.37da4f754952a6a9a1ef740679374e2c7434dfd57d3d616e107f01f90ccc5b13.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Getting started" />
+<meta property="og:description" content="Plans for this site and avoiding the cold start problem." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://anantd.github.io/post/getting-started/" />
+<meta property="article:published_time" content="2020-04-28T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-04-28T00:00:00+00:00" />
+<meta itemprop="name" content="Getting started">
+<meta itemprop="description" content="Plans for this site and avoiding the cold start problem.">
+<meta itemprop="datePublished" content="2020-04-28T00:00:00&#43;00:00" />
+<meta itemprop="dateModified" content="2020-04-28T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="403">
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Getting started"/>
+<meta name="twitter:description" content="Plans for this site and avoiding the cold start problem."/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Anant Dalela</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/notebooks/">
+        <li class="mobile-menu-item">Notebooks</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Anant Dalela</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/notebooks/">Notebooks</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Getting started</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> April 28, 2020 </span>
+        <div class="post-category">
+            <a href="/categories/writing/"> writing </a>
+            </div>
+        
+      </div>
+    </header>
+
+    
+    <div class="post-content">
+      <p>Previous versions of this site didn&rsquo;t survive too long, but I&rsquo;m cautiously optimistic this time. To imbue this iteration with some intent, I thought I&rsquo;d start with a few points of inspiration.</p>
+<p>Before I get to those, a loose description of my goals for this site:</p>
+<ul>
+<li>use frequent, public posts to develop defensible points of view on a variety of data-related subjects</li>
+<li>document learning checkpoints and share relevant projects</li>
+<li>develop a list of semi-polished notes-to-self <sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></li>
+</ul>
+<p>On to the good stuff. Here&rsquo;s a great excerpt from <a href="https://www.collaborativefund.com/blog/selfish-writing/">Morgan Housel on selfish writing</a>, describing a cycle that will hopefully become familiar:</p>
+<blockquote>
+<p>Good writers don’t walk around all day with 100,000 words of eloquent wisdom in their heads. No one can do that. They take some vague feeling they’ve been thinking about, dig into a bunch, write down what they’ve discovered, realize half of it doesn’t make sense, delete most of it, write some more, realize the new stuff contradicts itself, panic when they realize they don’t understand the topic as well as they thought they did, talk to other smart people about why that is, learn something new that reminds them of this other thing that might tie into the second paragraph, discover that this thing they believed before they started writing isn’t actually true, realize that if that thing isn’t true then this other thing is probably really important, and so on endlessly. Grinding through this process reveals bits of context that are hopefully new discoveries to the reader. More importantly, they were likely new discoveries to the writer before they set out writing.</p>
+</blockquote>
+<p>David Robinson has some more <a href="http://varianceexplained.org/r/start-blog/">tactical advice, particularly for data scientists</a>. He points out how each skill in the data analysis stack can be sharpened by writing publicly, and makes a great case for why hitting publish doesn&rsquo;t just create external feedback loops, it also gives you a better grasp of your own strengths (this prompt deserves a special mention: <em>Which of your skills are more developed, or more important, than you thought they were?</em>)</p>
+<p>My last recommendation is <a href="https://guzey.com/personal/why-have-a-blog/">Alexey Guzey&rsquo;s <em>Why You Should Start a Blog Right Now</em></a>, which hosts the most definitive collection of &lsquo;why you should write online&rsquo; advice I&rsquo;ve encountered so far, and makes a great resource if you need more convincing <sup id="fnref:2"><a href="#fn:2" class="footnote-ref" role="doc-noteref">2</a></sup>.</p>
+<section class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1" role="doc-endnote">
+<p>particularly in the notebooks section of this site <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+<li id="fn:2" role="doc-endnote">
+<p><em>Why unoriginal writing is useful</em> is easily my favorite header in recent memory <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</section>
+
+    </div>
+
+    <div class="post-copyright">
+  
+  
+  
+</div>
+<script src="https://unpkg.com/littlefoot/dist/littlefoot.js" 
+  type="application/javascript"></script>
+<script type="application/javascript">
+  littlefoot.default()
+</script><footer class="post-footer">
+      
+      <nav class="post-nav">
+        
+        
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+    <script src="https://utteranc.es/client.js"
+            repo="anantd/blog-comments"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by utterances.</a></noscript>
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:anant.dalela@gmail.com?subject=Hi!" class="iconfont icon-email" title="email"></a>
+      <a href="https://www.twitter.com/4nant" class="iconfont icon-twitter" title="twitter"></a>
+      <a href="https://www.linkedin.com/in/anantdalela/" class="iconfont icon-linkedin" title="linkedin"></a>
+      <a href="https://www.github.com/anantd" class="iconfont icon-github" title="github"></a>
+  <a href="https://anantd.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>.
+    &copy; 
+    2017 - 
+    2020
+    
+    <span class="author">Anant Dalela</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.cddea96674a99fd8cea50d36fb19d9c91f497feea4af5ce4596afd2dbaab9202.js"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-33531021-2', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+</body>
+</html>
