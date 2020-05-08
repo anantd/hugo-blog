@@ -54,8 +54,8 @@ To summarize: if you had COVID-19, you want to be in bucket A; if you never had 
 
 | | Had COVID-19  | Never had COVID-19  |
 |:-:|:-:|:-:|
-| Antibody test positive | :white_check_mark: **A** | :x: |
-| Antibody test negative | :x: | :white_check_mark: **B**  |
+| Antibody test positive | :white_check_mark: (**A**) | :x: (**false positive**)|
+| Antibody test negative | :x: | :white_check_mark: (**B**)  |
 
 ## What does a positive test mean for me?
 

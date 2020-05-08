@@ -62,13 +62,13 @@
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td align=&#34;center&#34;&gt;Antibody test positive&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;✅ &lt;strong&gt;A&lt;/strong&gt;&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;❌&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;✅ (&lt;strong&gt;A&lt;/strong&gt;)&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;❌ (&lt;strong&gt;false positive&lt;/strong&gt;)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;center&#34;&gt;Antibody test negative&lt;/td&gt;
 &lt;td align=&#34;center&#34;&gt;❌&lt;/td&gt;
-&lt;td align=&#34;center&#34;&gt;✅ &lt;strong&gt;B&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;✅ (&lt;strong&gt;B&lt;/strong&gt;)&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
