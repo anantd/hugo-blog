@@ -4,7 +4,7 @@
 
 .post-content {
   word-wrap: break-word;
-  font-family: 'Charter', 'Source Serif Pro', 'Spectral';
+  font-family:  $global-font-family, 'Source Serif Pro';
 
   @for $i from 1 through 6 {
     h#{$i} {
@@ -110,7 +110,7 @@
     .read-more-link {
       color: $theme-color;
       font-size: 1em;
-      font-family: 'Charter', 'Source Serif Pro', $global-font-family;
+      font-family: $global-font-family;
     
       &:hover {
         border-bottom: $post-readMore-border-bottom;

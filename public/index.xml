@@ -6,10 +6,134 @@
     <description>Recent content on Anant Dalela</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 28 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 07 May 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://anantd.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Making sense of antibody tests</title>
+      <link>https://anantd.github.io/post/understanding-antibody-tests/</link>
+      <pubDate>Thu, 07 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://anantd.github.io/post/understanding-antibody-tests/</guid>
+      <description>&lt;p&gt;How does a test that&amp;rsquo;s &amp;lsquo;99% accurate&amp;rsquo; become the practical equivalent of a coin flip? It&amp;rsquo;s a question that&amp;rsquo;s garnered some attention as the scrunity on antibody tests (&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;) increases. I&amp;rsquo;m paraphrasing the question from this explanation by Dr. Deborah Birx, responding to a question about how to interpret positive antibody tests:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&amp;hellip; if you have 1 percent of your population infected and you have a test that’s only 99 percent specific, that means that when you find a positive, 50 percent of the time will be a real positive and 50 percent of the time it won’t be.”&lt;br&gt;
+&amp;mdash; &lt;em&gt;Dr. Deborah Birx, April 20&lt;/em&gt; &lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;While there&amp;rsquo;s been some understandable confusion about this statistic, there&amp;rsquo;s also been some strong explanatory journalism. Here&amp;rsquo;s a good piece from &lt;a href=&#34;https://www.vox.com/2020/5/1/21240123/coronavirus-quest-diagnostics-antibody-test-covid&#34;&gt;Vox&lt;/a&gt;, and a &lt;a href=&#34;https://youtu.be/qtlSu7OhkYE&#34;&gt;great video from ProPublica&lt;/a&gt; (via &lt;a href=&#34;https://kottke.org/20/05/on-the-accuracy-of-covid-19-testing&#34;&gt;kottke.org&lt;/a&gt;) on how these tests work and what we can expect to learn from them.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;ve ever tried to teach someone statistics, you&amp;rsquo;ll appreciate the value of a vivid example. I&amp;rsquo;m sure I&amp;rsquo;ll be referencing this one for a while, so I thought I&amp;rsquo;d throw together a quick &lt;a href=&#34;https://www.reddit.com/r/explainlikeimfive/&#34;&gt;ELI5&lt;/a&gt; style explanation for posterity.&lt;/p&gt;
+&lt;h2 id=&#34;what-makes-a-test-good&#34;&gt;What makes a test good?&lt;/h2&gt;
+&lt;p&gt;Here&amp;rsquo;s how you&amp;rsquo;d want a test to work:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If you had COVID-19, the test should come back positive.&lt;/li&gt;
+&lt;li&gt;If you never had COVID-19, the test should come back negative.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;That&amp;rsquo;s pretty much it. Let&amp;rsquo;s add a way to measure how a test performs on these tasks.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you had COVID-19, the test should come back positive.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is measured by the &lt;strong&gt;True Positive Rate (TPR)&lt;/strong&gt;. &lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;Let&amp;rsquo;s say an antibody test has TPR of 95%. Here&amp;rsquo;s what that means: if you tested 100 people who actually had the disease:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;95 of them would correctly test positive.&lt;/li&gt;
+&lt;li&gt;5 people who had COVID-19 would test negative, and would not be tagged as recovered COVID cases (i.e. &lt;em&gt;false negatives&lt;/em&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you never had COVID-19, the test should come back negative.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;This is measured by the &lt;strong&gt;True Negative Rate (TNR)&lt;/strong&gt;. &lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;What happens when a test has a 95% TNR? If you tested 100 people who never had the disease:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;95 of them would be correctly test negative.&lt;/li&gt;
+&lt;li&gt;5 people who never had the disease would test positive, and would be incorrectly  categorized as recovered COVID-19 cases (i.e. &lt;em&gt;false positives&lt;/em&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To have faith in a test, you want both TPR and TNR to be as high as possible: you want the test to do a great job at both ruling you &lt;em&gt;in&lt;/em&gt; if you had COVID-19 and ruling you &lt;em&gt;out&lt;/em&gt; if you didn&amp;rsquo;t. There&amp;rsquo;s an inherent trade off when you optimize for one over the other (ex: an over-zealous positive classification will lead to more false positives).&lt;/p&gt;
+&lt;p&gt;To summarize: if you had COVID-19, you want to be in bucket A; if you never had COVID-19, you want to be in bucket B.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&#34;center&#34;&gt;&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Had COVID-19&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;Never had COVID-19&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Antibody test positive&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;✅ &lt;strong&gt;A&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;❌&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&#34;center&#34;&gt;Antibody test negative&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;❌&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;✅ &lt;strong&gt;B&lt;/strong&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;what-does-a-positive-test-mean-for-me&#34;&gt;What does a positive test mean for me?&lt;/h2&gt;
+&lt;p&gt;Understanding this setup is important, but &lt;em&gt;&amp;lsquo;How good is the test at spotting true positives and true negatives?&#39;&lt;/em&gt; isn&amp;rsquo;t the question we ultimately care about. The real question is, &lt;em&gt;&amp;lsquo;If I test positive, how sure can I be that I really had COVID-19?&#39;&lt;/em&gt; &lt;sup id=&#34;fnref:5&#34;&gt;&lt;a href=&#34;#fn:5&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;In other words, what&amp;rsquo;s the test&amp;rsquo;s &lt;strong&gt;Positive Predictive Value (PPV)&lt;/strong&gt;?&lt;/p&gt;
+&lt;p&gt;The short answer to that question: it depends. Specifically, it depends on what proportion of the population has been infected with COVID-19, i.e. the &lt;strong&gt;prevalence&lt;/strong&gt; of the disease. The number of people who&amp;rsquo;ve been infected in your city or town plays a major role in how you&amp;rsquo;d interpret a positive test result.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s why: when really few people have had COVID-19 (low prevalence), there just aren&amp;rsquo;t that many positive cases to be found. So if you test positive, you can&amp;rsquo;t easily tell if you&amp;rsquo;re one of the real positives who was correctly captured, or one of the false positives who slipped through the cracks. Conversely, when the proportion of infected people is high, the true positives vastly outnumber the false positives, making a positive test result much more conclusive.&lt;/p&gt;
+&lt;p&gt;This effect is particularly pronounced when prevalence is low. With a prevalance of 1% and an antibody test with TPR and TNR of 99%, 50% of positive tests results will be real positives.&lt;/p&gt;
+&lt;details class=&#34;admonition note&#34;&gt;&lt;summary class=&#34;admonition-title&#34;&gt;Show me the math&lt;/summary&gt;
+&lt;p&gt;Say you live in a town of &lt;code&gt;10,000&lt;/code&gt; people, with a COVID-19 prevalence of &lt;code&gt;1%&lt;/code&gt;. Everyone gets an antibody test with a TPR of &lt;code&gt;99%&lt;/code&gt; and a TNR of &lt;code&gt;99%&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Of those &lt;code&gt;10,000&lt;/code&gt; people:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;100&lt;/code&gt; people had COVID-19 (&lt;code&gt;1%&lt;/code&gt; of &lt;code&gt;10,000&lt;/code&gt;)
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;99&lt;/code&gt; of them correctly test positive (since TPR is &lt;code&gt;99%&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;1&lt;/code&gt; person tests negative (i.e. &lt;code&gt;1&lt;/code&gt; false negative)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;9900&lt;/code&gt; people never had COVID-19 (&lt;code&gt;99%&lt;/code&gt; of &lt;code&gt;10,000&lt;/code&gt;)
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;9801&lt;/code&gt; of them test correctly test negative (since TNR is &lt;code&gt;99%&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;99&lt;/code&gt; people test positive (i.e. &lt;code&gt;99&lt;/code&gt; false positives)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;See the problem? The number of true positives and false positives is exactly the same, giving you a 50-50 chance of really being positive if you test positive.&lt;/p&gt;
+&lt;/details&gt;
+&lt;p&gt;If you&amp;rsquo;re curious, here&amp;rsquo;s a chart showing how PPV changes as prevalence increases. At a prevalence of ~2%, there&amp;rsquo;s still a one-third chance that a positive test is wrong.&lt;/p&gt;
+&lt;figure class=&#34;center&#34;&gt;
+    &lt;img src=&#34;https://anantd.github.io/files/covid_prevalence_zoomed.svg&#34;/&gt; 
+&lt;/figure&gt;
+&lt;p&gt;Zooming out, you can see how once prevalence gets past 10%, positive tests start becoming pretty reliable.&lt;/p&gt;
+&lt;figure class=&#34;center&#34;&gt;
+    &lt;img src=&#34;https://anantd.github.io/files/covid_prevalence_no_zoom.svg&#34;/&gt; 
+&lt;/figure&gt;
+&lt;p&gt;Hopefully that helps build some intution for how disease prevalance factors into a test&amp;rsquo;s effectiveness. It&amp;rsquo;s the reason why seroprevalance studies are so important; without them, it&amp;rsquo;s anyone&amp;rsquo;s guess where we fall on that curve.&lt;/p&gt;
+&lt;p&gt;To see the motion-graphics version of this explanation, check out this video from ProPublica:&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube-nocookie.com/embed/qtlSu7OhkYE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;tests designed to see whether you&amp;rsquo;ve previously had COVID-19 &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;Source: &lt;a href=&#34;https://www.vox.com/2020/5/1/21240123/coronavirus-quest-diagnostics-antibody-test-covid&#34;&gt;https://www.vox.com/2020/5/1/21240123/coronavirus-quest-diagnostics-antibody-test-covid&lt;/a&gt; &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;also called &lt;em&gt;sensitivity&lt;/em&gt;, easily confused with &lt;em&gt;specificity&lt;/em&gt;, which you&amp;rsquo;ll see in a minute. Don&amp;rsquo;t worry, I don&amp;rsquo;t plan on using either of them. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;also called &lt;em&gt;specificity&lt;/em&gt; &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:5&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;We could frame this from the negative perspective too, but the same principle applies. &lt;a href=&#34;#fnref:5&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
     
     <item>
       <title>Getting started</title>
@@ -54,8 +178,6 @@
   
 
 
-
-
 &lt;/div&gt;
 </description>
     </item>
@@ -70,7 +192,6 @@
   
 &lt;p&gt;
 Some cleaned up notes-to-self on a bunch of dataviz and ML related topics.
-
 
 &lt;/div&gt;
 </description>

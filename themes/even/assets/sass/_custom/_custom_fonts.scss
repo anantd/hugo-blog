@@ -1,3 +1,9 @@
+@import url('https://rsms.me/inter/inter.css');
+html { font-family: 'Inter', sans-serif; }
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter var', sans-serif; }
+}
+
 /* source-sans-pro-regular - latin */
 @font-face {
     font-family: 'Source Sans Pro';
@@ -113,7 +119,7 @@
     font-family: 'Charter';
     src: url('../fonts/charter/charter_italic-webfont.eot');
     src: url('../fonts/charter/charter_italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('c../fonts/charter/harter_italic-webfont.woff') format('woff');
+    url('c../fonts/charter/charter_italic-webfont.woff') format('woff');
     font-weight: 400;
     font-style: italic;
 

@@ -13,12 +13,4 @@ vega: true
 Some cleaned up notes-to-self on a bunch of dataviz and ML related topics.
 {{</admonition>}}
 
-[link](/files/chart.html)
-
-## Data visualization
-
-SVG:
-
-{{% figure class="center" src="/files/chart.svg" alt="" caption="Test chart from the cars dataset"  %}}
-
 
