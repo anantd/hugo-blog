@@ -3,7 +3,7 @@ title: "Making sense of antibody tests"
 date: 2020-05-07
 toc: false
 categories: ['COVID-19']
-summary: 'A quick primer on the stats you need to know to interpret the news around antibody testing.'
+summary: 'A quick stats primer on interpreting antibody tests.'
 ---
 
 How does a test that's '99% accurate' become the practical equivalent of a coin flip? It's a question that's garnered some attention as the scrunity on antibody tests ([^4]) increases. I'm paraphrasing the question from this explanation by Dr. Deborah Birx, responding to a question about how to interpret positive antibody tests:
@@ -95,7 +95,7 @@ Zooming out, you can see how once prevalence gets past 10%, positive tests start
 
 {{% figure class="center" src="/files/covid_prevalence_no_zoom.svg" caption="" alt="" %}}
 
-Hopefully that helps build some intution for how disease prevalance factors into a test's effectiveness. It's the reason why seroprevalance studies are so important; without them, it's anyone's guess where we fall on that curve.
+Here's an [example script](https://gist.github.com/anantd/7ceb6392f1bf5f0ec29e22cacc1038b3) if you want to generate your own data. Hopefully that helps build some intution for how disease prevalance factors into a test's effectiveness. It's the reason why seroprevalance studies are so important; without them, it's anyone's guess where we fall on that curve.
 
 To see the motion-graphics version of this explanation, check out this video from ProPublica:
 

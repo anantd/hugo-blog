@@ -105,7 +105,7 @@
 &lt;figure class=&#34;center&#34;&gt;
     &lt;img src=&#34;https://anantd.github.io/files/covid_prevalence_no_zoom.svg&#34;/&gt; 
 &lt;/figure&gt;
-&lt;p&gt;Hopefully that helps build some intution for how disease prevalance factors into a test&amp;rsquo;s effectiveness. It&amp;rsquo;s the reason why seroprevalance studies are so important; without them, it&amp;rsquo;s anyone&amp;rsquo;s guess where we fall on that curve.&lt;/p&gt;
+&lt;p&gt;Here&amp;rsquo;s an &lt;a href=&#34;https://gist.github.com/anantd/7ceb6392f1bf5f0ec29e22cacc1038b3&#34;&gt;example script&lt;/a&gt; if you want to generate your own data. Hopefully that helps build some intution for how disease prevalance factors into a test&amp;rsquo;s effectiveness. It&amp;rsquo;s the reason why seroprevalance studies are so important; without them, it&amp;rsquo;s anyone&amp;rsquo;s guess where we fall on that curve.&lt;/p&gt;
 &lt;p&gt;To see the motion-graphics version of this explanation, check out this video from ProPublica:&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
