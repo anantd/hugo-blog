@@ -1,4 +1,6 @@
-This repo contains source files for my [personal blog](https://anantd.github.io).
+[![Netlify Status](https://api.netlify.com/api/v1/badges/274abcfc-dc1f-49f6-ab0c-bcdfb2858027/deploy-status)](https://app.netlify.com/sites/anantdalela/deploys)
+
+This repo contains source files for my [personal blog](https://anant.xyz).
 
 The site is built using [Hugo](https://gohugo.io), with a modified version of [this theme](https://themes.gohugo.io/hugo-theme-even/). Comments are powered by [utteranc.es](https://utteranc.es/).
 
