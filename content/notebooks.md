@@ -1,16 +1,41 @@
 ---
 title: "Notebooks"
 layout: notebooks
-toc: true
+toc: toc
 autoCollapseToc: true
 date: ''
 comment: false
-vega: true
+vega: false
 ---
 
-{{<admonition note "Coming soon" >}}
-<p>
-Some cleaned up notes-to-self on a bunch of dataviz and ML related topics.
-{{</admonition>}}
+:zap: under construction :zap:
 
+## Pandas
 
+Notes on using the [pandas](https://pandas.pydata.org/) library for data analysis (mostly from the perspective of a former [dplyr](https://dplyr.tidyverse.org/) user).
+
+### Basics
+Reading data  
+Data types in numpy and pandas  
+Inspecting and summarizing  
+Indexing and subsetting  
+Generating views vs copies  
+Grouped aggregations  
+
+### Time series
+Imputing missing values  
+Rolling aggregations  
+
+### Other
+Quick built-in plots  
+Notes on optimizing pandas
+
+## Altair
+
+Quick reference: line, bar, histogram  
+Layering charts  
+Customization: color  
+Customization: legend and axes  
+Interaction: brush selection  
+Interaction: highlight  
+Interaction: cross-filtering  

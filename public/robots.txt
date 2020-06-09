@@ -1,2 +1,0 @@
-User-agent: *
-Sitemap: https://anantd.github.io/sitemap.xml

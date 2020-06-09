@@ -4,12 +4,16 @@
 
 .post-content {
   word-wrap: break-word;
-  font-family: 'Charter', $global-font-family, 'Source Serif Pro';
-
+  font-family: $post-font-family;
+  margin-top: 20px;
+  text-rendering: optimizeLegibility;
+  
   @for $i from 1 through 6 {
     h#{$i} {
-      font-weight: 400;
+      font-weight: $post-header-font-weight;
       font-family: $global-font-family;
+      margin-top: 40px ;
+      margin-bottom: 20px;
 
       .anchor {
         float: left;
@@ -43,7 +47,7 @@
 
   a {
     color: $theme-color;
-    border-bottom: $content-link-border;
+    border-bottom: 0;
     border-bottom-width: 0.5px;
     word-break: normal, break-all;
 
@@ -60,10 +64,11 @@
     margin: 2em 0;
     padding: 10px 20px;
     position: relative;
-    color: rgba(#34495e, 0.8);
+    color: rgba(#34495e, 0.9);
     background-color: $content-blockquote-backgroud;
     border-left: $content-blockquote-border-left;
     box-shadow: 1px 1px 2px rgba(0,0,0,0.125);
+    font-size: 0.95em;
 
     p {
       margin: 0;
@@ -110,7 +115,7 @@
     .read-more-link {
       color: $theme-color;
       font-size: 1em;
-      font-family: 'Charter', $global-font-family;
+      font-family: $post-font-family;
     
       &:hover {
         border-bottom: $post-readMore-border-bottom;

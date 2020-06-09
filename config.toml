@@ -41,9 +41,9 @@ copyright = ""            # default: author.name ↓
   identifier = "about"
   url = "/about/" 
 [[menu.main]]
-  name = "Archives"
+  name = "Archive"
   weight = 20
-  identifier = "archives"
+  identifier = "archive"
   url = "/post/"
 [[menu.main]]
   name = "Notebooks"
@@ -56,19 +56,18 @@ copyright = ""            # default: author.name ↓
   identifier = "categories"
   url = "/categories/"
 
-
 [params]
   version = "4.x"           # Used to give a friendly message when you have an incompatible update
   debug = false             # If true, load `eruda.min.js`. See https://github.com/liriliri/eruda
 
-  since = "2017"            # Site creation time          
+  since = "2019"            # Site creation time          
   # use public git repo url to link lastmod git commit, enableGitInfo should be true.
   gitRepo = ""
 
   # site info (optional)                                 
   logoTitle = "Anant Dalela"        # default: the title value    
   keywords = ["blog", "data science", "machine learning", "programming", "software"]
-  description = ""
+  description = "Anant Dalela's home on the internet."
 
   archivePaginate = 10
 
@@ -129,27 +128,14 @@ copyright = ""            # default: author.name ↓
     hint = 30           # Display hint if the last modified time is more than these days ago.    
     warn = 180          # Display warning if the last modified time is more than these days ago.    
 
-  [params.gitment]          # Gitment is a comment system based on GitHub issues. see https://github.com/imsun/gitment
-    owner = ""              # Your GitHub ID
-    repo = ""               # The repo to store comments
-    clientId = ""           # Your client ID
-    clientSecret = ""       # Your client secret
 
   [params.utterances]       # https://utteranc.es/
     owner = "anantd"              # Your GitHub ID
     repo = "blog-comments"               # The repo to store comments
 
-  [params.gitalk]           # Gitalk is a comment system based on GitHub issues. see https://github.com/gitalk/gitalk
-    owner = ""              # Your GitHub ID
-    repo = ""               # The repo to store comments
-    clientId = ""           # Your client ID
-    clientSecret = ""       # Your client secret
-
-
   [params.flowchartDiagrams]# see https://blog.olowolo.com/example-site/post/js-flowchart-diagrams/
     enable = false
     options = ""
-
   [params.sequenceDiagrams] # see https://blog.olowolo.com/example-site/post/js-sequence-diagrams/
     enable = false
     options = ""            # default: "{theme: 'simple'}"

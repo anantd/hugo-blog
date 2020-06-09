@@ -7,10 +7,9 @@
   </div>
   
   <p> <br> </p>
-
-
+  
   <section id="posts" class="posts">
-    <h1> Recent posts </h1>
+    <h2> Recent posts </h2>
     {{/* (index .Site.Paginate) */}}
     {{- $paginator := .Paginate (where (where .Site.RegularPages "Type" "post") ".Params.hiddenfromhomepage" "!=" true) }}
     {{- range $paginator.Pages -}}

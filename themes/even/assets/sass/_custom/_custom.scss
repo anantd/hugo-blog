@@ -9,22 +9,24 @@ $white: #fefefe !default;
 $light-gray: #e6e6e6 !default;
 $gray: #cacaca !default;
 $dark-gray: #8a8a8a !default;
-  
 
-$global-font-size: 16px !default;
-$global-lineheight: 1.5 !default;
+$global-font-size: 17px !default;
+$global-lineheight: 1.6 !default;
 
 // Font family of the site.
-$global-font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", 'Helvetica Neue', Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$global-font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Roboto", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+// Post content font
+$post-font-family: "Charter", "IBM Plex Sans", "Charter", "Source Sans Pro", $global-font-family;
 
 // Serif font family of the site.
-$global-serif-font-family:  $global-font-family, 'Source Sans Pro', -apple-system, BlinkMacSystemFont, Helvetica, "Segoe UI", Roboto, sans-serif;
+$global-serif-font-family: $global-font-family;
 
 // Font family of the logo.
 $logo-font-family: $global-font-family;
 
 // Font family of the code.
-$code-font-family: Monaco, monospace !default;
+$code-font-family: "Fira Mono", Consolas, Menlo, monospace !default;
 
 // Font size of the logo.
 $logo-font-size: 24px !default;
@@ -34,4 +36,38 @@ h1, h2, h3, h4 {
     font-weight: 500;
 }
 
+$post-title-font-weight: 400;
+$post-header-font-weight: 500;
+$menu-font-weight: 500;
+
+/* highlight behavior for post content */
+.post-content{
+    mark {
+        background-color: #FFFFCC;
+        padding-left: 3px;
+        border-radius: 3px;
+    }
+    
+    .green-highlight, .pink-highlight, .blue-highlight, .orange-highlight {
+        border-radius: 3px;
+        padding-left: 3px;
+    }
+    
+    .green-highlight {
+        background: #99FFCC; /* Default color, all browsers */
+    }
+    
+    .pink-highlight {
+        background: #FFCCFF; /* Default color, all browsers */
+    }
+    
+    .blue-highlight {
+        background: rgb(204, 224, 255); /* Default color, all browsers */
+    }
+    
+    .orange-highlight {
+        background: rgb(255, 231, 204); /* Default color, all browsers */
+    }
+
+}
 
