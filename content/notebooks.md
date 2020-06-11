@@ -8,13 +8,14 @@ comment: false
 vega: false
 ---
 
-:zap: under construction :zap:
+:construction: under construction :construction:
 
 ## Pandas
 
 Notes on using the [pandas](https://pandas.pydata.org/) library for data analysis (mostly from the perspective of a former [dplyr](https://dplyr.tidyverse.org/) user).
 
 ### Basics
+
 Reading data  
 Data types in numpy and pandas  
 Inspecting and summarizing  
@@ -23,16 +24,18 @@ Generating views vs copies
 Grouped aggregations  
 
 ### Time series
+
 Imputing missing values  
 Rolling aggregations  
 
 ### Other
+
 Quick built-in plots  
 Notes on optimizing pandas
 
 ## Altair
 
-Quick reference: line, bar, histogram  
+[Quick reference: line, bar, histogram](/notebooks/altair/1_introduction.html)  
 Layering charts  
 Customization: color  
 Customization: legend and axes  

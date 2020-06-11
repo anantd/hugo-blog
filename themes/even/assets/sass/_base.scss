@@ -26,8 +26,8 @@ body {
 }
 
 ::selection {
-  background: $theme-color;
-  color: #fff; 
+  background: rgba(135, 207, 235, 0.4);
+  color: black, #fff; 
 }
 
 // ::-webkit-scrollbar {

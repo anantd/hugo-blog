@@ -1,4 +1,4 @@
-baseURL = "https://anantd.github.io/"
+baseURL = "https://anant.xyz/"
 languageCode = "en"
 defaultContentLanguage = "en"                             
 title = "Anant Dalela"
@@ -89,7 +89,7 @@ copyright = ""            # default: author.name ↓
   fancybox = true           # see https://github.com/fancyapps/fancybox                 
 
   # vega
-  vega = false
+  vega = true
 
   # mathjax
   mathjax = false           # see https://www.mathjax.org/                              
