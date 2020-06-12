@@ -89,7 +89,7 @@ copyright = ""            # default: author.name ↓
   fancybox = true           # see https://github.com/fancyapps/fancybox                 
 
   # vega
-  vega = true
+  vega = false
 
   # mathjax
   mathjax = false           # see https://www.mathjax.org/                              
