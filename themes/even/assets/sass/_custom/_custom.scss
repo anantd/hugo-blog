@@ -14,10 +14,10 @@ $global-font-size: 16px !default;
 $global-lineheight: 1.55 !default;
 
 // Font family of the site.
-$global-font-family: "Source Sans Pro", "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Roboto", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$global-font-family: "Fira Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", "Roboto", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 // Post content font
-$post-font-family: "Source Serif Pro", "Charter", $global-font-family;
+$post-font-family: "IBM Plex Sans", "Charter", $global-font-family;
 
 // Serif font family of the site.
 $global-serif-font-family: $global-font-family;
@@ -33,15 +33,15 @@ $logo-font-size: 24px !default;
 
 h1, h2, h3, h4 {
     font-family: $global-font-family;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 $post-title-font-weight: 400;
 $post-title-font-size: 23px !default;
 
-$post-header-font-weight: 600;
-$menu-font-weight: 600;
-$logo-font-weight: 600;
+$post-header-font-weight: 500;
+$menu-font-weight: 500;
+$logo-font-weight: 500;
 
 // Headings font size of the site.
 $global-headings: (
