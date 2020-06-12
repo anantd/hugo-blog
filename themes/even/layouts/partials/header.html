@@ -1,7 +1,17 @@
 <div class="logo-wrapper">
   <a href="{{ "/" | relLangURL }}" class="logo">
     {{- if .Site.Params.logoTitle -}}
+      <style> 
+      .highlight {
+        background: url(https://www.andyhooke.co.uk/wp-content/uploads/2018/02/yellow-brushstroke.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        padding: 5px;
+        }
+      </style>
+      <span class="highlight">
       {{ .Site.Params.logoTitle }}
+      </span>
     {{- else -}}
       {{ .Site.Title }}
     {{- end -}}
