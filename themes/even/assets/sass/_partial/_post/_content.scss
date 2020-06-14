@@ -8,6 +8,10 @@
   margin-top: 20px;
   text-rendering: optimizeLegibility;
   
+  p {
+    padding-bottom: 5px;
+  }
+  
   @for $i from 1 through 6 {
     h#{$i} {
       font-weight: $post-header-font-weight;
