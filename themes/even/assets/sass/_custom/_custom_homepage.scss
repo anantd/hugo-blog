@@ -2,6 +2,10 @@
 
 .homepage-content{
   font-family: $post-font-family;
+
+  .break-word {
+    word-wrap: break-word;
+  }
   
   a {
     color: $theme-color;
@@ -22,6 +26,36 @@
     background-color: #FFFFCC;
     padding-left: 3px;
     border-radius: 3px;
+  }
+
+  .post-time {
+    font-family: $code-font-family;
+    margin-right: 10px;
+    color: #8a8a8a;
+    font-size: .8em;
+  }
+  
+  h3, h4 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+ 
+  .column {
+    flex: 45%;
+    padding-bottom: 20px;
+    padding-right: 4%;
+  }
+  
+  /* On screens that are 700px wide or less, go from two columns to single column */
+  @media screen and (max-width: $global-body-width) {
+    .column {
+      flex: 100%;
+    }
   }
   
 }

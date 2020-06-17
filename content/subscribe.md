@@ -1,16 +1,8 @@
 ---
 title: "Sign up"
 toc: false
-date: ''
 comment: false
-layout: default
+vega: false
 ---
 
-<iframe
-scrolling="no"
-style="width:100%!important;height:220px;border:0px #ccc solid !important"
-src="https://buttondown.email/anant?as_embed=true"
-></iframe><br /><br />
-
-
-
+<iframe src="https://anantd.substack.com/embed" width="100%" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe><br></br>

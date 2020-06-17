@@ -31,27 +31,27 @@ copyright = ""            # default: author.name ↓
   filename = "sitemap.xml"
 
 [[menu.main]]             # config your menu             
-  name = "Home"
+  name = "home"
   weight = 10
   identifier = "home"
   url = "/"
 [[menu.main]]
-  name = "About"
+  name = "about"
   weight = 15
   identifier = "about"
   url = "/about/" 
 [[menu.main]]
-  name = "Archive"
+  name = "archive"
   weight = 20
   identifier = "archive"
   url = "/post/"
 [[menu.main]]
-  name = "Notebooks"
+  name = "notebooks"
   weight = 25
   identifier = "notebooks"
   url = "/notebooks/" 
 [[menu.main]]
-  name = "Categories"
+  name = "categories"
   weight = 40
   identifier = "categories"
   url = "/categories/"
@@ -69,13 +69,15 @@ copyright = ""            # default: author.name ↓
   keywords = ["blog", "data science", "machine learning", "programming", "software"]
   description = "Anant Dalela's home on the internet."
 
-  archivePaginate = 10
+  archivePaginate = 20
+  postslimit = 10
+  noteslimit = 10
 
   # show 'xx Posts In Total' in archive page ?           
   showArchiveCount = false
 
   # The date format to use; for a list of valid formats, see https://gohugo.io/functions/format/
-  dateFormatToUse = "January 2, 2006"
+  dateFormatToUse = "Jan 02, 2006"
 
   # show word count and read time ?                      
   moreMeta = false

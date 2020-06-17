@@ -8,8 +8,7 @@ comment: false
 vega: false
 ---
 
-:construction: under construction :construction:
+:construction: *under construction* :construction:
 
-## Altair
+Detailed and/or useful notes will end up here.
 
-*Coming soon.*
