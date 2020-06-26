@@ -37,7 +37,7 @@ Here's how you'd want a test to work:
 
 That's pretty much it. Let's add a way to measure how a test performs on these tasks.
 
-> If you had COVID-19, the test should come back positive.
+*1. If you had COVID-19, the test should come back positive.*  
 
 This is measured by the **True Positive Rate (TPR)**. [^2]
 
@@ -46,7 +46,7 @@ Let's say an antibody test has TPR of 95%. Here's what that means: if you tested
 - 95 of them would correctly test positive.
 - 5 people who had COVID-19 would test negative, and would not be tagged as recovered COVID cases (i.e. *false negatives*).
 
-> If you never had COVID-19, the test should come back negative.
+*2. If you never had COVID-19, the test should come back negative.*  
 
 This is measured by the **True Negative Rate (TNR)**. [^3]
 
