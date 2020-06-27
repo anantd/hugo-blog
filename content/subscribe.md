@@ -5,4 +5,9 @@ comment: false
 vega: false
 ---
 
-<iframe src="https://anantd.substack.com/embed" width="100%" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe><br></br>
+<iframe
+scrolling="no"
+frameborder="0"
+style="width:100%!important;height:220px;border:0px solid #EEE;background:white"
+src="https://buttondown.email/anant?as_embed=true"
+></iframe><br><br>
