@@ -11,8 +11,8 @@ This blog is an evolving exercise in developing a regular writing habit, being a
 
 Here's how it's set up at the moment:  
 
-[**Posts**](/post/): moderately-polished essays  
-[**Notes**](/note): semi-polished notes-to-self, links, clips, and recommendations. The goal is to produce these at a fairly rapid clip, then gradually build more detailed notes (eventually something resembling essays).
+[**Posts**](/post/) -- *moderately-polished essays*  
+[**Notes**](/note) -- *semi-polished notes-to-self, links, clips, and recommendations. The goal is to produce these at a fairly rapid clip, then gradually build more detailed notes (eventually something resembling essays).*
   
 Over time, this page will turn into "where to start" page. For now, thanks for checking it out! Drop me a line if you have any feedback.
 

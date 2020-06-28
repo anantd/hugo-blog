@@ -8,6 +8,11 @@
   margin-top: 20px;
   text-rendering: optimizeLegibility;
   line-height: $post-line-height;
+  font-weight: $global-font-weight;
+
+  strong {
+    font-weight: 600;
+  }
   
   p {
     padding-bottom: 5px;
