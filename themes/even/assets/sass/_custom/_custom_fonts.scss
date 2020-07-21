@@ -165,7 +165,7 @@ html { font-family: 'Inter', sans-serif; }
   font-family: 'Charter';
   src:
   local('Charter'),
-  url('./fonts/charter_regular.woff') format('woff');
+  url('./fonts/charter/charter_regular.woff') format('woff');
   font-style: normal;
   font-weight: 400;
   text-rendering: optimizeLegibility;
@@ -176,7 +176,7 @@ html { font-family: 'Inter', sans-serif; }
   font-family: 'Charter';
   src:
   local('Charter Italic'),
-  url('./fonts/charter_italic.woff') format('woff');
+  url('./fonts/charter/charter_italic.woff') format('woff');
   font-style: italic;
   font-weight: 400;
   text-rendering: optimizeLegibility;
@@ -187,7 +187,7 @@ html { font-family: 'Inter', sans-serif; }
   font-family: 'Charter';
   src:
   local('Charter Bold'),
-  url('./fonts/charter_bold.woff') format('woff');
+  url('./fonts/charter/charter_bold.woff') format('woff');
   font-style: normal;
   font-weight: 700;
   text-rendering: optimizeLegibility;
@@ -198,7 +198,7 @@ html { font-family: 'Inter', sans-serif; }
   font-family: 'Charter';
   src:
   local('Charter Bold Italic'),
-  url('./fonts/charter_bold_italic.woff') format('woff');
+  url('./fonts/charter/charter_bold_italic.woff') format('woff');
   font-style: italic;
   font-weight: 700;
   text-rendering: optimizeLegibility;
