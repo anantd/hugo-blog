@@ -67,7 +67,7 @@ copyright = ""            # default: author.name ↓
   # site info (optional)                                 
   logoTitle = "Anant Dalela"        # default: the title value    
   keywords = ["blog", "data science", "machine learning", "programming", "software"]
-  description = "Anant Dalela's home on the internet."
+  description = "Anant's home on the internet."
 
   archivePaginate = 20
   postslimit = 10
