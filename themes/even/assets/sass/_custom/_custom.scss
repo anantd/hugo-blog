@@ -10,17 +10,17 @@ $light-gray: #e6e6e6 !default;
 $gray: #cacaca !default;
 $dark-gray: #8a8a8a !default;
 
-$global-font-size: 16px !default;
-$home-font-size: 16px !default;
+$global-font-size: 17px !default;
+$home-font-size: 17px !default;
 $global-lineheight: 1.5 !default; 
 $post-line-height: 1.5 !default;
 $global-font-weight: 400;
 
 // Font family of the site.
-$global-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$global-font-family: 'Fira Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 // Post content font
-$post-font-family: $global-font-family;
+$post-font-family: 'Charter', $global-font-family;
 
 // Serif font family of the site.
 $global-serif-font-family: $global-font-family;
@@ -33,15 +33,15 @@ $code-font-family:  "Fira Code", Consolas, Menlo, monospace !default;
 
 // Font size of the logo.
 $logo-font-size: 22px !default;
-$logo-font-weight: 600;
+$logo-font-weight: 500;
 
 $menu-font-family: $global-font-family;
-$menu-font-weight: 600;
+$menu-font-weight: 500;
 $menu-link-font-size: 19px;
 
 h1, h2, h3, h4 {
    font-family: $global-font-family;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 $post-title-font-weight: 400;
@@ -49,7 +49,7 @@ $post-title-font-size: 26px !default;
 $post-header-font-weight: 400;
 
 .post-subscribe {
-    font-size: 1em;
+    font-size: 0.9em;
     color: grey;
     a {
         color: rgba(#0047AB, 0.75);
