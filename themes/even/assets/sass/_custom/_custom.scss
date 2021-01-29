@@ -17,10 +17,10 @@ $post-line-height: 1.5 !default;
 $global-font-weight: 400;
 
 // Font family of the site.
-$global-font-family: 'Fira Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$global-font-family:  "Ubuntu", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 // Post content font
-$post-font-family: 'IBM Plex Sans', 'Charter', $global-font-family;
+$post-font-family: "IBM Plex Sans", $global-font-family;
 
 // Serif font family of the site.
 $global-serif-font-family: $global-font-family;
@@ -32,12 +32,12 @@ $logo-font-family: $global-font-family;
 $code-font-family:  "Fira Code", Consolas, Menlo, monospace !default;
 
 // Font size of the logo.
-$logo-font-size: 22px !default;
-$logo-font-weight: 500;
+$logo-font-size: 21px !default;
+$logo-font-weight: 400;
 
 $menu-font-family: $global-font-family;
 $menu-font-weight: 500;
-$menu-link-font-size: 19px;
+$menu-link-font-size: 18px;
 
 h1, h2, h3, h4 {
    font-family: $global-font-family;
@@ -45,7 +45,7 @@ h1, h2, h3, h4 {
 }
 
 $post-title-font-weight: 400;
-$post-title-font-size: 26px !default;
+$post-title-font-size: 28px !default;
 $post-header-font-weight: 400;
 
 .post-subscribe {
@@ -58,7 +58,7 @@ $post-header-font-weight: 400;
 
 // Headings font size of the site.
 $global-headings: (
-  h1: 24px,
+  h1: 26px,
   h2: 24px,
   h3: 22px,
   h4: 18px,

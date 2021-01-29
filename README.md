@@ -13,3 +13,4 @@ Theme modifications include:
 To do:
 
 - [ ] Add elements of [Tufte CSS](https://alanorth.github.io/hugo-theme-tufte-css/2017/02/tufte-css-is-for-lovers/), particularly support for side notes
+- [ ] Update directory structure to use Hugo's [page bundles](https://gohugo.io/content-management/organization/#page-bundles)
