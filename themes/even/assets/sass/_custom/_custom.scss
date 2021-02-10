@@ -12,12 +12,12 @@ $dark-gray: #8a8a8a !default;
 
 $global-font-size: 16px !default;
 $home-font-size: 16px !default;
-$global-lineheight: 1.5 !default; 
-$post-line-height: 1.5 !default;
+$global-lineheight: 1.6 !default; 
+$post-line-height: 1.6 !default;
 $global-font-weight: 400;
 
 // Font family of the site.
-$global-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$global-font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 // Post content font
 $post-font-family:  $global-font-family;
@@ -36,12 +36,12 @@ $logo-font-size: 20px !default;
 $logo-font-weight: 400;
 
 $menu-font-family: $global-font-family;
-$menu-font-weight: 600;
-$menu-link-font-size: 18px;
+$menu-font-weight: 400;
+$menu-link-font-size: 16px;
 
 h1, h2, h3, h4 {
    font-family: $global-font-family;
-    font-weight: 400;
+   font-weight: 400;
 }
 
 $post-title-font-weight: 600;
@@ -58,8 +58,8 @@ $post-header-font-weight: 600;
 
 // Headings font size of the site.
 $global-headings: (
-  h1: 2rem,
-  h2: 1.5rem,
+  h1: 2.25rem,
+  h2: 1.75rem,
   h3: 1.25rem,
   h4: 18px,
   h5: 18px,
