@@ -5,12 +5,14 @@
 
   <div class="row">
     <div class="column">
+      <div class="section-description">
       {{ .Content }}
+      </div>
     </div>
     <div class="column">
       <p>
       <h4>📌 Currently</h4>
-      <em>writing, infovis, python </em>
+      <em class="section-description">writing, infovis, python </em>
       <p><p>
       <a href = "/categories">All the things ⟶</a> 
     </div>
@@ -87,14 +89,14 @@
   <div class="row">
     <div class="column">
       <h4>✍🏽 Recent Posts</h4>
-      <p><em>Somewhat fully formed.</em></p>
+      <p class="section-description"><em>Somewhat fully formed.</em></p>
       <ul style="list-style: none; padding: 0; margin: 0">
         {{ $pages := .Pages }}
         {{ if .IsHome }}{{ $pages = where .Site.RegularPages.ByDate.Reverse "Type" "post" }}{{ end }}
         {{ range last .Site.Params.PostsLimit (where $pages "Section" "!=" "") }}
         <li>
           <span class="post-time">{{ .Date.Format "Jan 02" }}</span>
-          <a href="{{ .RelPermalink }}">{{ .Title | markdownify }} </a>
+          <span><a href="{{ .RelPermalink }}">{{ .Title | markdownify }} </a></span>
         </li>
         {{ end }}
       </ul>
@@ -103,7 +105,7 @@
     </div>
     <div class="column">
       <h4>📝 Recent Notes</h4>
-      <p><em>Quick grabs, half-baked.</em></p>
+      <p class="section-description"><em>Quick grabs, half-baked.</em></p>
       <ul style="list-style: none; padding: 0; margin: 0">
         {{ $pages := .Pages }}
         {{ if .IsHome }}{{ $pages = where .Site.RegularPages.ByDate.Reverse "Type" "note" }}{{ end }}

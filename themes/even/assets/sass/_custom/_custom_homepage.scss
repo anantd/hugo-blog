@@ -1,7 +1,7 @@
 // General link behavior
 
 .homepage-content{
-  font-family: $post-font-family;
+  font-family: $global-font-family;
   font-size: $home-font-size;
   font-weight: $global-font-weight;
 
@@ -34,7 +34,10 @@
     font-family: $code-font-family;
     margin-right: 10px;
     color: #8a8a8a;
-    font-size: .8em;
+    font-size: .9em;
+  }
+  .section-description {
+    font-family: $post-font-family;
   }
   
   h3, h4 {
