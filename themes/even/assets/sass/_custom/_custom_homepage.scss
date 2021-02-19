@@ -1,7 +1,7 @@
 // General link behavior
 
 .homepage-content{
-  font-family: $global-font-family;
+  font-family: $post-font-family;
   font-size: $home-font-size;
   font-weight: $global-font-weight;
 
@@ -43,6 +43,7 @@
   h3, h4 {
     margin-bottom: 10px;
     margin-top: 10px;
+    font-weight: 500;
   }
 
   .row {
