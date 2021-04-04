@@ -46,10 +46,10 @@ copyright = ""            # default: author.name ↓
   identifier = "archive"
   url = "/post/"
 [[menu.main]]
-  name = "notebooks"
+  name = "projects"
   weight = 25
-  identifier = "notebooks"
-  url = "/notebooks/" 
+  identifier = "projects"
+  url = "/projects/" 
 [[menu.main]]
   name = "categories"
   weight = 40

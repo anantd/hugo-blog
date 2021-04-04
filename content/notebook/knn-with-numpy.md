@@ -2,7 +2,7 @@
 title: 'Implementing KNN with numpy'
 date: 2020-05-12
 categories: ['numpy']
-draft: true
+draft: false
 ---
 
 This is an annotated version from the `numpy` partitioning section from Jake Van Der Plaas' Python Data Science Handbook. In the unlikely event that you haven't heard of it, I highly recommend checking it out (it's available for free as a set of Jupyter notebooks). You can find the exact section I'm recreating here: 

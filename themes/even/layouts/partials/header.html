@@ -1,15 +1,7 @@
 <div class="logo-wrapper">
   <a href="{{ "/" | relLangURL }}" class="logo">
     {{- if .Site.Params.logoTitle -}}
-      <style> 
-      .highlight {
-        background: url(/files/yellow-brushstroke.png);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        padding: 5px;
-        }
-      </style>
-      <span class="highlight">
+      <span class="header-highlight">
       {{ .Site.Params.logoTitle }}
       </span>
     {{- else -}}

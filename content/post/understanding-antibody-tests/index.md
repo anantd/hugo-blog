@@ -100,11 +100,11 @@ See the problem? The number of true positives and false positives is exactly the
 
 If you're curious, here's a chart showing how PPV changes as prevalence increases. At a prevalence of ~2%, there's still a one-third chance that a positive test is wrong.
 
-{{% figure class="center" src="/files/covid_prevalence_zoomed.svg" caption="*Positive predictive value when prevalence is low (click/tap to enlarge)*" alt="" %}}
+{{% figure class="center" src="covid_prevalence_zoomed.svg" caption="*Positive predictive value when prevalence is low (click/tap to enlarge)*" alt="" %}}
 
 Zooming out, you can see how once prevalence gets past 10%, positive tests start becoming pretty reliable.
 
-{{% figure class="center" src="/files/covid_prevalence_no_zoom.svg" caption="" alt="" %}}
+{{% figure class="center" src="covid_prevalence_no_zoom.svg" caption="" alt="" %}}
 
 Here's an [example script](https://gist.github.com/anantd/7ceb6392f1bf5f0ec29e22cacc1038b3) if you want to generate your own data. Hopefully that helps build some intution for how disease prevalance factors into a test's effectiveness. It's the reason why seroprevalance studies are so important; without them, it's anyone's guess where we fall on that curve.
 
